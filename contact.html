@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact the Student Management System using our accessible contact form.">
+
+    <title>Student Management System | Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Student Management System home">
+
+            <span class="logo-icon">SMS</span>
+            <span>Student Management System</span>
+
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="students.html">Students</a>
+            <a href="courses.html">Courses</a>
+            <a href="media.html">Media</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Page banner -->
+
+    <section class="page-banner">
+
+        <p class="section-label">CONTACT</p>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Have a question about the Student Management System?
+            Send us a message using the form below.
+        </p>
+
+    </section>
+
+
+    <!-- Contact section -->
+
+    <section class="section contact-section">
+
+        <div class="contact-information">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                We Would Like to Hear From You
+            </h2>
+
+            <p>
+                If you have a question or need more information,
+                you can contact us using the details below.
+            </p>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:info@sms-example.com">
+                        20036418@students.koi.edu.au
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div>
+
+                    <h3>Phone</h3>
+
+                    <a href="tel:+61400000000">
+                        +61 400 000 000
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    #
+                </div>
+
+                <div>
+
+                    <h3>Social Media</h3>
+
+                    <p>
+                        Follow us for student and course updates.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Visit our Facebook page">
+
+                            Facebook
+
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Visit our Instagram page">
+
+                            Instagram
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Visit our LinkedIn page">
+
+                            LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact form -->
+
+        <div class="contact-form-container">
+
+            <h2>
+                Send Us a Message
+            </h2>
+
+            <p>
+                All fields marked with
+                <span aria-hidden="true">*</span>
+                are required.
+            </p>
+
+
+            <form
+                id="contactForm"
+                action="#"
+                method="post"
+                novalidate>
+
+
+                <!-- Full name -->
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        minlength="2"
+                        maxlength="60"
+                        required
+                        autocomplete="name"
+                        aria-describedby="nameError">
+
+                    <small
+                        id="nameError"
+                        class="error-message"
+                        aria-live="polite">
+                    </small>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                        autocomplete="email"
+                        aria-describedby="emailError">
+
+                    <small
+                        id="emailError"
+                        class="error-message"
+                        aria-live="polite">
+                    </small>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+61 400 000 000"
+                        pattern="[0-9+\s()-]{8,20}"
+                        autocomplete="tel"
+                        aria-describedby="phoneHelp phoneError">
+
+                    <small
+                        id="phoneHelp"
+                        class="form-help">
+
+                        Optional. Enter a valid phone number.
+
+                    </small>
+
+                    <small
+                        id="phoneError"
+                        class="error-message"
+                        aria-live="polite">
+                    </small>
+
+                </div>
+
+
+                <!-- Subject -->
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                    <select
+                        id="subject"
+                        name="subject"
+                        required
+                        aria-describedby="subjectError">
+
+                        <option value="">
+                            Select a subject
+                        </option>
+
+                        <option value="student">
+                            Student Information
+                        </option>
+
+                        <option value="course">
+                            Course Information
+                        </option>
+
+                        <option value="technical">
+                            Technical Support
+                        </option>
+
+                        <option value="general">
+                            General Enquiry
+                        </option>
+
+                    </select>
+
+                    <small
+                        id="subjectError"
+                        class="error-message"
+                        aria-live="polite">
+                    </small>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        minlength="10"
+                        maxlength="500"
+                        placeholder="Write your message here..."
+                        required
+                        aria-describedby="messageHelp messageError"></textarea>
+
+                    <small
+                        id="messageHelp"
+                        class="form-help">
+
+                        Please enter at least 10 characters.
+
+                    </small>
+
+                    <small
+                        id="messageError"
+                        class="error-message"
+                        aria-live="polite">
+                    </small>
+
+                </div>
+
+
+                <!-- Privacy notice -->
+
+                <div class="privacy-notice">
+
+                    <input
+                        type="checkbox"
+                        id="privacy"
+                        name="privacy"
+                        required
+                        aria-describedby="privacyError">
+
+                    <label for="privacy">
+                        I understand that this is a static website
+                        prototype and no real personal information
+                        should be submitted.
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                </div>
+
+                <small
+                    id="privacyError"
+                    class="error-message"
+                    aria-live="polite">
+                </small>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-submit">
+
+                    Send Message
+
+                </button>
+
+
+                <!-- Form feedback -->
+
+                <div
+                    id="formFeedback"
+                    class="form-feedback"
+                    role="status"
+                    aria-live="polite"
+                    tabindex="-1">
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Privacy section -->
+
+    <section class="section light-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                PRIVACY
+            </p>
+
+            <h2>
+                Your Privacy Matters
+            </h2>
+
+            <p>
+                This website is a static prototype created for
+                educational purposes. It does not store or collect
+                real user information.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Student Management System
+            </h3>
+
+            <p>
+                A static website prototype created for
+                ICT726 Web Development.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="students.html">Students</a>
+            <a href="courses.html">Courses</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                Email: 20036418@students.koi.edu.au
+            </p>
+
+            <p>
+                Phone: +61 400 000 000
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Student Management System.
+            ICT726 Web Development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="View sample student records in the Student Management System.">
+
+    <title>Student Management System | Students</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Student Management System home">
+
+            <span class="logo-icon">SMS</span>
+            <span>Student Management System</span>
+
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="students.html" class="active">Students</a>
+
+            <a href="courses.html">Courses</a>
+
+            <a href="media.html">Media</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-banner">
+
+        <p class="section-label">STUDENT RECORDS</p>
+
+        <h1>Student Information</h1>
+
+        <p>
+            Browse the sample student records available in the
+            Student Management System.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">RECORDS</p>
+
+            <h2>Registered Students</h2>
+
+            <p>
+                The information below is sample data created for
+                this static website prototype.
+            </p>
+
+        </div>
+
+
+        <!-- Search box -->
+
+        <div class="search-area">
+
+            <label for="studentSearch">
+                Search student records
+            </label>
+
+            <input
+                type="search"
+                id="studentSearch"
+                placeholder="Search by name, ID or course..."
+                aria-describedby="searchHelp">
+
+            <p id="searchHelp" class="form-help">
+                Enter a name, student ID or course name.
+            </p>
+
+        </div>
+
+
+        <!-- Student table -->
+
+        <div class="table-wrapper">
+
+            <table class="student-table">
+
+                <caption>
+                    Sample registered student records
+                </caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">Student ID</th>
+
+                        <th scope="col">Name</th>
+
+                        <th scope="col">Course</th>
+
+                        <th scope="col">Email</th>
+
+                        <th scope="col">Year</th>
+
+                        <th scope="col">Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTableBody">
+
+                    <tr>
+
+                        <td>ST1001</td>
+
+                        <td>Nusrat</td>
+
+                        <td>Information Technology</td>
+
+                        <td>10000@students.koi.edu.au</td>
+
+                        <td>1</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1002</td>
+
+                        <td>Daniel Smith</td>
+
+                        <td>Information Technology</td>
+
+                        <td>daniel@example.com</td>
+
+                        <td>2</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1003</td>
+
+                        <td>Emily Wilson</td>
+
+                        <td>Business Information Systems</td>
+
+                        <td>emily@example.com</td>
+
+                        <td>3</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1004</td>
+
+                        <td>James Brown</td>
+
+                        <td>Cyber Security</td>
+
+                        <td>james@example.com</td>
+
+                        <td>2</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1005</td>
+
+                        <td>Olivia Taylor</td>
+
+                        <td>Data Analytics</td>
+
+                        <td>olivia@example.com</td>
+
+                        <td>1</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1006</td>
+
+                        <td>Michael Lee</td>
+
+                        <td>Software Development</td>
+
+                        <td>michael@example.com</td>
+
+                        <td>3</td>
+
+                        <td>
+                            <span class="status inactive-status">
+                                Inactive
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1007</td>
+
+                        <td>Grace Martin</td>
+
+                        <td>Information Systems</td>
+
+                        <td>grace@example.com</td>
+
+                        <td>2</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>ST1008</td>
+
+                        <td>Noah Anderson</td>
+
+                        <td>Information Technology</td>
+
+                        <td>noah@example.com</td>
+
+                        <td>1</td>
+
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- Search result message -->
+
+        <p
+            id="noResults"
+            class="no-results"
+            role="status"
+            aria-live="polite">
+
+            No matching student records were found.
+
+        </p>
+
+    </section>
+
+
+    <!-- Information cards -->
+
+    <section class="section light-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">STUDENT DATA</p>
+
+            <h2>What Information Is Displayed?</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <div class="feature-icon">ID</div>
+
+                <h3>Student ID</h3>
+
+                <p>
+                    A unique sample identification number is
+                    provided for each student.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">01</div>
+
+                <h3>Course</h3>
+
+                <p>
+                    The student's sample study program is shown
+                    in the course column.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">✓</div>
+
+                <h3>Status</h3>
+
+                <p>
+                    The status indicates whether a sample student
+                    is currently active.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Student Management System</h3>
+
+            <p>
+                A static website prototype created for
+                ICT726 Web Development.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="courses.html">Courses</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                Email: 20036418@students.koi.edu.au
+            </p>
+
+            <p>
+                Phone: +61 400 000 000
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Student Management System.
+            ICT726 Web Development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

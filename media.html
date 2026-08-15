@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Student Management System media gallery featuring student life, classrooms and learning environments.">
+
+    <title>Student Management System | Media Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Student Management System home">
+
+            <span class="logo-icon">SMS</span>
+            <span>Student Management System</span>
+
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="students.html">Students</a>
+
+            <a href="courses.html">Courses</a>
+
+            <a href="media.html" class="active">Media</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Page banner -->
+
+    <section class="page-banner">
+
+        <p class="section-label">MEDIA</p>
+
+        <h1>Student Life Gallery</h1>
+
+        <p>
+            Explore images representing learning,
+            student activities and campus life.
+        </p>
+
+    </section>
+
+
+    <!-- Gallery -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                PHOTO GALLERY
+            </p>
+
+            <h2>
+                Explore Our Learning Environment
+            </h2>
+
+            <p>
+                Click on any image to view a larger version.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <!-- Image 1 -->
+
+            <figure class="gallery-item">
+
+                <button
+                    type="button"
+                    class="gallery-button"
+                    onclick="openGalleryImage(
+                    'images/students.jpg',
+                    'Students working together in a learning environment'
+                    )"
+                    aria-label="View larger image of students studying">
+
+                    <img
+                        src="images/students.jpg"
+                        alt="Students working together in a learning environment">
+
+                    <span class="gallery-overlay">
+                        View Image
+                    </span>
+
+                </button>
+
+                <figcaption>
+                    Collaborative Student Learning
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Image 2 -->
+
+            <figure class="gallery-item">
+
+                <button
+                    type="button"
+                    class="gallery-button"
+                    onclick="openGalleryImage(
+                    'images/classroom.jpg',
+                    'Students attending a classroom session'
+                    )"
+                    aria-label="View larger classroom image">
+
+                    <img
+                        src="images/classroom.jpg"
+                        alt="Students attending a classroom session">
+
+                    <span class="gallery-overlay">
+                        View Image
+                    </span>
+
+                </button>
+
+                <figcaption>
+                    Classroom Learning
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Image 3 -->
+
+            <figure class="gallery-item">
+
+                <button
+                    type="button"
+                    class="gallery-button"
+                    onclick="openGalleryImage(
+                    'images/campus.jpg',
+                    'University campus building'
+                    )"
+                    aria-label="View larger image of the campus">
+
+                    <img
+                        src="images/campus.jpg"
+                        alt="University campus building">
+
+                    <span class="gallery-overlay">
+                        View Image
+                    </span>
+
+                </button>
+
+                <figcaption>
+                    Campus Environment
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Image 4 -->
+
+            <figure class="gallery-item">
+
+                <button
+                    type="button"
+                    class="gallery-button"
+                    onclick="openGalleryImage(
+                    'images/library.jpg',
+                    'Students studying inside a library'
+                    )"
+                    aria-label="View larger image of students in a library">
+
+                    <img
+                        src="images/library.jpg"
+                        alt="Students studying inside a library">
+
+                    <span class="gallery-overlay">
+                        View Image
+                    </span>
+
+                </button>
+
+                <figcaption>
+                    Library and Study Space
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Image 5 -->
+
+            <figure class="gallery-item">
+
+                <button
+                    type="button"
+                    class="gallery-button"
+                    onclick="openGalleryImage(
+                    'images/graduation.jpg',
+                    'Students celebrating graduation'
+                    )"
+                    aria-label="View larger graduation image">
+
+                    <img
+                        src="images/graduation.jpg"
+                        alt="Students celebrating graduation">
+
+                    <span class="gallery-overlay">
+                        View Image
+                    </span>
+
+                </button>
+
+                <figcaption>
+                    Graduation Celebration
+                </figcaption>
+
+            </figure>
+
+
+           
+
+        </div>
+
+    </section>
+
+
+    <!-- Video section -->
+
+    <section class="section light-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                VIDEO
+            </p>
+
+            <h2>
+                Learning and Student Experience
+            </h2>
+
+            
+
+        </div>
+
+
+        <div class="video-container">
+
+            <video
+                controls
+                preload="metadata"
+                aria-label="Student learning environment video">
+
+                <source
+                    src="images/student-life.mp4"
+                    type="video/mp4">
+
+                Your browser does not support the video element.
+
+            </video>
+
+            <p class="media-note">
+                  </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery modal -->
+
+    <div
+        id="galleryModal"
+        class="gallery-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="galleryModalTitle"
+        aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                class="modal-close"
+                onclick="closeGalleryImage()"
+                aria-label="Close image viewer">
+
+                &times;
+
+            </button>
+
+            <img
+                id="largeGalleryImage"
+                src=""
+                alt="">
+
+            <p id="galleryModalTitle">
+                Image preview
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Student Management System
+            </h3>
+
+            <p>
+                A static website prototype created for
+                ICT726 Web Development.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="students.html">Students</a>
+
+            <a href="courses.html">Courses</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                Email: 20036418@students.koi.edu.au
+            </p>
+
+            <p>
+                Phone: +61 400 000 000
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Student Management System.
+            ICT726 Web Development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
